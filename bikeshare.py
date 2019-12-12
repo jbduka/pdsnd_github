@@ -173,8 +173,8 @@ def trip_duration_stats(df):
     print('\nTotal Travel Time:', total_trip_duration)
 
     # display mean travel time
-    mean_trip_duration = df["Trip Duration"].mean()
-    print('\nMean Travel Time:', mean_trip_duration)
+    mean_travel_time = df["Trip Duration"].mean()
+    print('\nMean Travel Time:', mean_travel_time)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -225,6 +225,7 @@ def main():
 
         i = 0
         while True:
+            # get user input if they want to display raw data
             raw_data = input('\nDo you like to display 5 records of raw data (yes or no)\n')
             if raw_data.lower() == 'yes':
                 print(df.iloc[i:i+5])
@@ -232,6 +233,7 @@ def main():
             else:
                 break
 
+        # get user input if they want to start over
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
