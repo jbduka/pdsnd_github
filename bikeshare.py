@@ -227,7 +227,8 @@ def main():
 
         i = 0
         while True:
-            raw_data = input('\nDo you like to display 5 records of raw data (yes or no)\n')
+            # get user input if they want to display raw data
+           raw_data = input('\nDo you like to display 5 records of raw data (yes or no)\n')
             if raw_data.lower() == 'yes':
                 print(df.iloc[i:i+5])
                 i +=5
