@@ -14,4 +14,5 @@ washington.csv
 
 ### Credits
 pandas.Series - https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html
+The Python Standard Library - https://docs.python.org/3.6/library/index.html
 
